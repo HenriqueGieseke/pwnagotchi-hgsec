@@ -2,7 +2,7 @@ Pwnagotchi HGSEC includes an adapted Pwnagotchi LCD display implementation
 extracted from the reference device. Pwnagotchi is attributed by the installed
 package to evilsocket and the development team, with Jayofelony listed as a
 maintainer. The installed package distributed GNU GPL version 3 license text;
-see LICENSE. The original project is https://pwnagotchi.ai/.
+see LICENSE. The Pwnagotchi project is https://pwnagotchi.ai/; the distribution maintained by Jayofelony is https://github.com/jayofelony/pwnagotchi.
 
 The Waveshare 1.3-inch LCD HAT is hardware by Waveshare. Its hardware pinout
 informs the GPIO mapping. This repository does not include its vendor driver;

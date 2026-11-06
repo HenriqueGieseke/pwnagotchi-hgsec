@@ -48,3 +48,7 @@ Hold KEY2 for two seconds. The action updates that line, stops Pwnagotchi and be
 ## Disable or recover
 
 Remove `/etc/pwnagotchi/hgsec-deauth-enabled` to prevent future KEY2 toggles; this does **not** change an already enabled deauthentication setting. Set `personality.deauth = false` explicitly and restart Pwnagotchi according to your installation's procedure if required. Disable the service with `sudo systemctl disable --now pwnagotchi-hgsec-buttons.service`. If needed, restore backed-up configuration and display file, restart Pwnagotchi and bettercap, and inspect their journals. The old button service should only be re-enabled intentionally; it has different hold and state behavior.
+
+## Reference card installer
+
+`tools/card-install.py` is a one-off recovery artifact for the original card, not a general installer: it expects `/dev/sdc2` mounted at `/tmp/pwnagotchi-sd`, uses root, and enables the deauthentication button while preserving the existing setting. Device names can change and identify a different disk on another computer. Do not run it without checking the target and adapting it to your system. Its backup includes the device configuration and must remain private. Rollback restores the saved configuration in full and overwrites later configuration changes.
