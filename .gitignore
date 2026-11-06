@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+*.pcap
+*.pcapng
+*.cap
+*.22000
+*.hc22000
+captures/
+handshakes/
+secrets/

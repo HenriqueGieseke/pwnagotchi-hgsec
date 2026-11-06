@@ -1,0 +1,14 @@
+[Unit]
+Description=Pwnagotchi HGSEC LCD HAT buttons
+After=pwnagotchi.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/lib/pwnagotchi-hgsec/buttons.py
+Restart=on-failure
+RestartSec=5
+RuntimeDirectory=pwnagotchi-hgsec
+RuntimeDirectoryPreserve=yes
+
+[Install]
+WantedBy=multi-user.target
